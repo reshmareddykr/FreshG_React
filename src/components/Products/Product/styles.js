@@ -19,6 +19,11 @@ export default makeStyles(() => ({
     buttons: {
         display: 'flex',
         alignItems: 'center',
+        color: '#000000'
+      },
+      cart:{
+        backgroundColor : 'inherit'
       }
 
 }));
+

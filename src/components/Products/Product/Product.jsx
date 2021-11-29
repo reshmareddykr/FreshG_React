@@ -12,6 +12,12 @@ const Product = ({product ,onAddtoCart}) => {
     const decQuantity =() =>{
         setquantity(quantity-1);
     }
+    const [color,setColor] = useState('enabled');
+    function ClickedOnce()
+    {
+        setColor('Secondary');
+    }
+    
     return (    
 
        <Card className = {classes.root}>
@@ -36,7 +42,7 @@ const Product = ({product ,onAddtoCart}) => {
                 <Button type ='button' size = "small" onClick ={incQuantity}>+</Button>
                 </div>
                 <IconButton aria-label = "Add to Cart" onClick = {() => onAddtoCart(product.id,quantity)}>
-                    <AddShoppingCart/>
+                    <AddShoppingCart color ={color} onClick={()=> ClickedOnce()}/>
                 </IconButton>
             </CardActions>
        </Card>
