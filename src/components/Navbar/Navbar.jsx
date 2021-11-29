@@ -12,7 +12,7 @@ return(
         <Toolbar>
         <div >
                 <IconButton herf ="/" aria-label = "Home button">
-                    <HomeRounded/>
+                    <HomeRounded style = {{fill: '#1bcf87'}}/>
                 </IconButton>
             </div>
             <Typography varient ="h6" className= {classes.title}>
@@ -23,7 +23,7 @@ return(
             <div className={classes.button}>                
                 <IconButton href ="/cart" aria-label ="Show cart">
                     <Badge badgeContent={totalItems} color="secondary">
-                        <ShoppingCart/>
+                        <ShoppingCart style ={{fill: '#d1ebe4'}}/>
                     </Badge>
                 </IconButton>
             </div>
